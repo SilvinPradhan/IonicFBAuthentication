@@ -1,0 +1,7 @@
+{
+  "name": "fbAuthTemp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
