@@ -1,0 +1,13 @@
+ion-button {
+  width: 230px;
+  height: 60px;
+  margin: auto;
+  vertical-align: middle;
+  display: flex;
+  flex-direction: row;
+
+  .start-icon {
+    zoom: 1.3;
+    padding: 5px;
+  }
+}

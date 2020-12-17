@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
 
-* {
+ion-slide {
+  padding: 190px 25px;
+  display: flex;
+  flex-direction: column;
   font-family: "Montserrat", sans-serif;
+  h2 {
+    font-size: 36px;
+    font-weight: bold;
+  }
 }

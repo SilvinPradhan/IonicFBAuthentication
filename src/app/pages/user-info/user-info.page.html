@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar color="tertiary">
+    <ion-title>User Data</ion-title>
+    <ion-buttons class="danger" (click)="authservice.signOut()" end
+      ><ion-icon name="log-out-sharp"></ion-icon>Sign Out</ion-buttons
+    >
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-title>
+    <h2 class="alldata">User information:</h2>
+  </ion-title>
+  <ion-item>
+    <h5><b>User ID : </b> {{ authservice.currentUserId }}</h5>
+    <h5><b>User email : </b> {{ authservice.currentUserName }}</h5>
+  </ion-item>
+</ion-content>
+
+<ion-content> </ion-content>

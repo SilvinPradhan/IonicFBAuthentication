@@ -1,0 +1,78 @@
+<ion-header>
+  <ion-toolbar color="tertiary">
+    <ion-title>SIGN UP</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div class="container">
+    <app-logo></app-logo>
+    <h2>Create an Account?</h2>
+    <form (ngSubmit)="register()">
+      <ion-list>
+        <div class="names">
+          <ion-item>
+            <ion-label position="stacked"> First Name</ion-label>
+            <ion-input
+              type="text"
+              name="fname"
+              placeholder="Enter First Name"
+            ></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="stacked"> Last Name</ion-label>
+            <ion-input
+              type="text"
+              name="lname"
+              placeholder="Enter Last Name"
+            ></ion-input>
+          </ion-item>
+        </div>
+        <ion-item>
+          <ion-label position="stacked"> Email</ion-label>
+          <ion-input
+            type="email"
+            name="email"
+            [(ngModel)]="email"
+            placeholder="Enter EmailID"
+            required
+          ></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="stacked"> Password</ion-label>
+          <ion-input
+            type="password"
+            name="password"
+            [(ngModel)]="password"
+            placeholder="Create Password"
+            required
+          ></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="stacked"> Confirm Password</ion-label>
+          <ion-input
+            type="password"
+            name="confirmPassword"
+            placeholder="Re-Type Password"
+          ></ion-input>
+        </ion-item>
+        <div class="redirect-div">
+          <ion-item>
+            <span class="redirect">Already got an account?</span
+            ><a routerLink="/login">Login</a>
+          </ion-item>
+        </div>
+        <div>
+          <p *ngIf="errorMessage.length > 0" class="text-danger">
+            {{ errorMessage }}
+          </p>
+          <p *ngIf="error.message.length > 0" class="text-danger">
+            {{ error.message }}
+          </p>
+
+          <p *ngIf="message.length > 0" class="text-success">{{ message }}</p>
+        </div>
+        <ion-button expand="block" color="primary">Register</ion-button>
+      </ion-list>
+    </form>
+  </div>
+</ion-content>

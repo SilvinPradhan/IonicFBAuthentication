@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  margin-top: 100px;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  form {
+    width: 350px;
+    height: 400px;
+    .redirect-div {
+      display: flex;
+      justify-content: space-around;
+      a {
+        text-decoration: none;
+        padding-left: 10px;
+      }
+      .redirect {
+        font-size: 14px;
+      }
+    }
+    ion-button {
+      width: 150px;
+      height: 45px;
+      margin-top: 10px !important;
+      margin: auto;
+    }
+    p {
+      padding: 10px;
+      color: rgb(204, 22, 22);
+      text-transform: capitalize;
+      font-size: 13px;
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+}
