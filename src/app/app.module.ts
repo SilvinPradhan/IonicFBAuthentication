@@ -13,8 +13,10 @@ import { AngularFireDatabaseModule } from "@angular/fire/database";
 import { AngularFireAuthModule } from "@angular/fire/auth";
 import { AngularFirestoreModule } from "@angular/fire/firestore";
 
+import { AngularFireMessagingModule } from "@angular/fire/messaging";
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
+import { ServiceWorkerModule } from "@angular/service-worker";
 
 @NgModule({
   declarations: [AppComponent],
@@ -26,7 +28,11 @@ import { AppComponent } from "./app.component";
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule,
     AngularFireDatabaseModule,
+    AngularFireMessagingModule,
     AngularFirestoreModule,
+    ServiceWorkerModule.register("ngsw-worker.js", {
+      enabled: environment.production,
+    }),
   ],
   providers: [
     StatusBar,
