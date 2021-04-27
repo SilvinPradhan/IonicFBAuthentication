@@ -1,20 +1,172 @@
 <ion-header>
-  <ion-toolbar color="tertiary">
-    <ion-title>User Data</ion-title>
-    <ion-buttons class="danger" (click)="authservice.signOut()" end
-      ><ion-icon name="log-out-sharp"></ion-icon>Sign Out</ion-buttons
-    >
-  </ion-toolbar>
+	<ion-toolbar color="tertiary">
+		<ion-buttons slot="start">
+			<ion-title>
+				<img alt="logo" height="40" src="https://img.icons8.com/color/2x/firebase.png" />
+			</ion-title>
+		</ion-buttons>
+		<ion-buttons slot="end">
+			<ion-button class="danger" (click)="authservice.signOut()" end
+				><ion-icon name="log-out-sharp"></ion-icon>Sign Out <ion-ripple-effect></ion-ripple-effect
+			></ion-button>
+		</ion-buttons>
+
+		<ion-title> IRC Dashboard</ion-title>
+	</ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <ion-title>
-    <h2 class="alldata">User information:</h2>
-  </ion-title>
-  <ion-item>
-    <h5><b>User ID : </b> {{ authservice.currentUserId }}</h5>
-    <h5><b>User email : </b> {{ authservice.currentUserName }}</h5>
-  </ion-item>
+<ion-content fullscreen>
+	<!--Grid row-->
+	<ion-grid>
+		<!--Grid column-->
+		<div class="container" id="team">
+			<ion-button size="large" color="tertiary" block>Internet Resource Center</ion-button>
+			<p><i class="spacingItalic">All the Required Links for Access</i></p>
+			<br />
+			<hr color="whitesmoke" />
+			<ion-row>
+				<ion-col size="3">
+					<div class="flexDirection">
+						<a href="https://www.southeastern.edu/workday/index.html">
+							<img
+								alt="W3Schools"
+								src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Workday_Logo.png"
+								alt="Work Day"
+								style="width: 45%"
+								class="Logo"
+							/>
+						</a>
+						<p class="under-text">Work Day</p>
+					</div>
+				</ion-col>
+				<ion-col size="3">
+					<div class="flexDirection">
+						<a href="https://meet.google.com/tjd-ezpx-vqk">
+							<img
+								alt="W3Schools"
+								src="https://fonts.gstatic.com/s/i/productlogos/meet_2020q4/v1/web-96dp/logo_meet_2020q4_color_2x_web_96dp.png"
+								alt="Boss"
+								style="width: 45%"
+								class="image-container"
+							/>
+						</a>
+						<p class="under-text">Google Meet</p>
+					</div>
+				</ion-col>
+				<ion-col size="3">
+					<div class="flexDirection">
+						<a href="https://docs.google.com/document/d/16uiwv-sV670yPCaRYMWHsN1kA4pYP20Ppik69rVLl4I/edit">
+							<img
+								alt="Messages"
+								src="https://img.icons8.com/fluent/2x/envelope-number.png"
+								alt="Messages"
+								style="width: 45%"
+								class="image-container"
+							/>
+						</a>
+						<p class="under-text">Messages</p>
+					</div>
+				</ion-col>
+				<ion-col size="3">
+					<div class="flexDirection">
+						<a
+							href="https://docs.google.com/spreadsheets/d/1eoVzpuJuXx1Fwaj1sdQdt8fZ612MYI6W8atki9C1YDs/edit"
+						>
+							<img
+								alt="W3Schools"
+								src="https://img.icons8.com/cute-clipart/2x/log.png"
+								alt="LogSheet"
+								style="width: 45%"
+								class="Logo"
+							/>
+						</a>
+						<p class="under-text">Log Sheet</p>
+					</div>
+				</ion-col>
+			</ion-row>
+
+			<ion-row>
+				<ion-col size="3">
+					<div class="flexDirection">
+						<a href="https://docs.google.com/document/d/1_y8_YynEk-0LwwEPZIvBXEuinEpcDcxdMgGPEDNJ6FM/edit">
+							<img
+								alt="W3Schools"
+								src="https://img.icons8.com/cute-clipart/2x/help.png"
+								alt="Help"
+								style="width: 45%"
+								class="image-container"
+							/>
+						</a>
+						<p class="under-text">Help</p>
+					</div>
+				</ion-col>
+				<ion-col size="3">
+					<div class="flexDirection">
+						<a
+							href="https://docs.google.com/spreadsheets/u/1/d/1sG4bHrlrQH1UcAEu7bYRnxljcbRFFdMDFQwFIJNBYKs/edit?usp=sharing"
+						>
+							<img
+								alt="W3Schools"
+								src="https://img.icons8.com/cute-clipart/2x/overtime.png"
+								alt="Work Schedule"
+								style="width: 45%"
+								class="image-container"
+							/>
+						</a>
+						<p class="under-text">Work Schedule</p>
+					</div>
+				</ion-col>
+				<ion-col size="3">
+					<div class="flexDirection">
+						<a
+							href="https://docs.google.com/forms/d/e/1FAIpQLScDJguCWfW69nMSynchMAR-DvaNs0mfHjyptcmZWOlIg5G7bQ/viewform"
+						>
+							<img
+								alt="W3Schools"
+								src="https://img.icons8.com/cute-clipart/2x/test-partial-passed.png"
+								alt="checklist"
+								style="width: 45%"
+								class="image-container"
+							/>
+						</a>
+						<p class="under-text">Check List</p>
+					</div>
+				</ion-col>
+				<ion-col size="3">
+					<div class="flexDirection">
+						<a
+							href="https://docs.google.com/forms/d/e/1FAIpQLSdnYnRqhXHq8f99Xm9wDtZm3ZSXiv7TdcrOMqo326DzNrq0UA/viewform"
+						>
+							<img
+								alt="W3Schools"
+								src="https://img.icons8.com/cute-clipart/2x/friday.png"
+								alt="Friday Checklist"
+								style="width: 45%"
+								class="Logo"
+							/>
+						</a>
+						<p class="under-text">Friday CheckList</p>
+					</div>
+				</ion-col>
+			</ion-row>
+			<hr color="whitesmoke" />
+		</div>
+		<!--Grid column-->
+	</ion-grid>
+	<div class="webView">
+		<iframe src="https://www.southeastern.edu/" height="100%" width="100%" target="_self"></iframe>
+	</div>
 </ion-content>
 
-<ion-content> </ion-content>
+<!-- Footer without a border -->
+<ion-footer class="ion-no-border">
+	<ion-toolbar>
+		<div class="footer">
+			<ion-title>Department Head</ion-title>
+			<p>Dr. Minh Huynh</p>
+			<p>Ph: 985-549-3949</p>
+			<p>Fax: 985-549-5010</p>
+			<p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i> minh.huynh@southeastern.edu</p>
+		</div>
+	</ion-toolbar>
+</ion-footer>

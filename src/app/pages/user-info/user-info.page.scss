@@ -1,1 +1,66 @@
+.videoInfo {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	margin: auto;
+}
 
+.info {
+	display: flex;
+	flex-direction: column;
+	margin-top: 10px;
+	align-items: center;
+	justify-content: center;
+}
+
+.container {
+	margin-top: 10px;
+	width: 1200px;
+
+	.spacingItalic {
+		padding-top: 5px;
+		font-size: 13;
+	}
+
+	.flexDirection {
+		display: flex;
+		flex-direction: column;
+		.under-text {
+			font-weight: 600;
+			font-size: 17px;
+			margin-left: 20px;
+		}
+	}
+}
+
+@media screen and (max-width: 720px) {
+	.container {
+		width: 550px;
+		margin-left: 12px;
+		.under-text {
+			font-size: 11px;
+		}
+	}
+}
+
+ion-col:hover {
+	background: whitesmoke;
+}
+
+ion-button {
+	font-size: 17px;
+}
+
+.footer {
+	margin: 0;
+	padding: 2px;
+	align-items: center;
+	justify-content: center;
+}
+
+.webView {
+	margin: auto;
+	width: 70%;
+	height: 100%;
+}
